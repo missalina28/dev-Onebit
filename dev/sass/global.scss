@@ -1,0 +1,131 @@
+body {
+    background-color: $background;
+    color: $body-text;
+    font-size: $font-size;
+    font-family: $font-primary;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: $titles;
+}
+.color_list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.color_item {
+    text-align: center;
+    padding: 24px 12px;
+    border-radius: 12px;
+    color: $titles;
+    font-size: 18px;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.background_color {
+    background-color: $background;
+}
+.system_color {
+    background-color: $system;
+}
+.strokes_color {
+    background-color: $strokes;
+}
+.body-text_color {
+    background-color: $body-text;
+}
+.titles_color {
+    background-color: $titles;
+}
+.accent_color {
+    background-color: $accent;
+}
+.hover_color {
+    background-color: $hover;
+}
+.active_color {
+    background-color: $active;
+}
+.errors_color {
+    background-color: $errors;
+}
+.status_color {
+    background-color: $status;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    background-color: $accent;
+    border: 1px solid $accent;
+    padding: 9px 60px;
+    color: $system;
+    font-weight: 600;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $hover;
+        border-color: $hover;
+        color: $system;
+        outline: none;
+    }
+    &.btn_secondary {
+        background-color: transparent;
+        border-color: $strokes;
+        color: $titles;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $accent;
+            border-color: $accent;
+            color: $system;
+        }
+    }
+    &.btn_large {
+        padding: 27px 95px;
+    }
+    &.btn_profile {
+        background-color: transparent;
+        color: $titles;
+        border-color: $strokes;
+        padding: 8px 8px;
+        width: 56px;
+        height: 56px;
+        font-size: 18px;
+        position: relative;
+        &:hover {
+            border-color: #8A9385;
+        }
+        &.verified,
+        &.not-verified {
+            &::before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                right: -6px;
+                top: -6px;
+                border-radius: 50%;
+                background-color: $accent;
+            }
+            &.not-verified {
+                &::before {
+                    background-color: $errors;
+                }
+            }
+        }
+        svg {
+            width: 22px;
+            height: 28px;
+        }
+    }
+    &:not(.btn-check)+.btn:active {
+        color: $system;
+        background-color: $hover;
+        border-color: $hover;
+    }
+    &:focus-visible {
+        box-shadow: none;
+    }    
+}
+
+
