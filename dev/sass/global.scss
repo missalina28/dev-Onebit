@@ -127,5 +127,29 @@ h1,h2,h3,h4,h5,h6 {
         box-shadow: none;
     }    
 }
+.project-pages-item a {
+    text-decoration: none;
+    color: $body-text;
+    &:hover {
+        color: $hover;
+    }
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+::selection {
+    color: $system;
+    background-color: $accent;
+}
 
