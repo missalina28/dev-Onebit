@@ -1,0 +1,33 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper page-login">
+    <div class="page-sign-up">
+        <div class="column-logo">
+            <img src="assets/img/onebit-logo.svg" alt="logo">
+        </div>
+        <form class="template-form">
+            <button class="btn btn_profile">
+                <svg>
+                    <use href="#arrow-back"></use>
+                </svg>
+            </button>
+            <h3 class="template-form_title">увійти в акаунт</h3>
+            <h6 class="template-form_subtitle">Для успішного входу в особистий кабінет заповніть поля, які вказані нижче</h6>
+            <div class="input-box">
+                <label for="email">email</label>
+                <input id="email" type="email">
+            </div>
+            <div class="input-box">
+                <label for="password">пароль</label>
+                <input id="password" type="password">
+            </div>
+            <button class="btn btn_large" type="submit">увійти в акаунт</button>
+            <div class="template-form_question_column">
+                <div class="template-form_question_row">ще не маєте акаунта Onebit?<a href="#">створити акаунт</a></div>
+                <div class="template-form_question_row"><a href="#">забув пароль</a></div>
+            </div>
+        </form>
+    </div>
+</main>
+@@include('templates/footer.html')
+ 

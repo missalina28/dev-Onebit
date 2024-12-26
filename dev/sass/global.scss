@@ -7,6 +7,26 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color: $titles;
 }
+h1 {
+    font-size: 58px;
+    line-height: 70px;
+}
+h2 {
+    font-size: 48px;
+    line-height: 60px;
+}
+h3 {
+    font-size: 36px;
+    line-height: 34px;
+}
+h5 {
+    font-size: 32px;
+    line-height: 42px;
+}
+h6 {
+    font-size: 20px;
+    line-height: 34px;
+}
 .color_list {
     display: grid;
     grid-gap: 30px;
@@ -127,11 +147,11 @@ h1,h2,h3,h4,h5,h6 {
         box-shadow: none;
     }    
 }
-.project-pages-item a {
+ a {
     text-decoration: none;
-    color: $body-text;
+    color: $accent;
     &:hover {
-        color: $hover;
+        text-decoration: underline;
     }
 }
 

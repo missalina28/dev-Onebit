@@ -1,0 +1,52 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper page-login">
+    <div class="page-sign-up">
+        <div class="column-logo">
+            <img src="assets/img/onebit-logo.svg" alt="logo">
+        </div>
+        <form class="template-form">
+            <button class="btn btn_profile">
+                <svg>
+                    <use href="#arrow-back"></use>
+                </svg>
+            </button>
+            <h3 class="template-form_title">cтворити акаунт</h3>
+            <h6 class="template-form_subtitle">Для успішного проходження реєстрації заповніть поля, вказані нижче</h6>
+            <div class="input-row">
+                <div class="input-box">
+                    <label for="name">ім’я</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="input-box">
+                    <label for="surname">прізвище</label>
+                    <input id="surname" type="text">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="tel"></label>
+                <input id="tel" type="tel">
+            </div>
+            <div class="input-box">
+                <label for="email">email</label>
+                <input id="email" type="email">
+            </div>
+            <div class="input-box">
+                <label for="telegram">telegram</label>
+                <input id="telegram" type="text">
+            </div>
+            <div class="input-box">
+                <label for="password">пароль</label>
+                <input id="password" type="password">
+            </div>
+            <div class="control-box">
+                <input id="checkbox" type="checkbox">
+                <label for="checkbox">Я погоджуюся з <a href="#">умовами користування</a> та <a href="#">політикою конфіденційності</a></label>
+            </div>
+            <button class="btn btn_large" type="submit">зареєструватися</button>
+            <div class="template-form_question_row">вже маєте акаунт Onebit? <a href="#">увійти</a></div>
+        </form>
+    </div>
+</main>
+@@include('templates/footer.html')
+ 
