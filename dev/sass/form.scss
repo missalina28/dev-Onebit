@@ -117,10 +117,25 @@
        }  
        input:checked + label {
             &::before {
+                background-color: #152108;
                 border-color: $accent;
-                background: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L5 8L12 1' stroke='%23B1FF5C' stroke-width='2'/%3E%3C/svg%3E") center no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4L5 8L12 1' stroke='%23B1FF5C' stroke-width='2'/%3E%3C/svg%3E");
+                background-position: center;
+                background-repeat: no-repeat;
             }
        }  
  }
-    
+ .hideShowPassword-toggle {
+    background: url(./assets/img/icon-eye.svg) center/contain no-repeat transparent;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transform: translate(-30px, 0);
+    font-size: 0;
+    border: none;
+}
+
+.hideShowPassword-toggle-hide {
+    background: url(./assets/img/icon-eye-active.svg) center/contain no-repeat transparent;
+}
 
