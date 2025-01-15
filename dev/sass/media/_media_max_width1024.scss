@@ -1,4 +1,69 @@
 @media screen and (max-width: 1024px) {
+    .column-logo {
+        display: none;
+    }
+    .page-login .template-form {
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 500px;
+    }
+    .template-form .btn_profile {
+        left: 20px;
+        top: 15px;
+    }
+    .input-row {
+        display: block;
+    }
+    .template-form input, .template-form label {
+        font-size: 14px;
+        padding: 22.5px 20px;
+    }
+    .input-box {
+        margin-bottom: 20px;
+    }
+    .input-box label {
+        left: 3px;
+        top: 3px;
+    }
+    .template-form_title {
+        font-size: 32px;
+        line-height: 40px;
+        padding-left: 72px;
+        padding-top: 11px;
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+    }
+    .template-form_subtitle {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .control-box {
+        margin-right: 12px;
+        margin-top: 28px;
+    }
+    .control-box label {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 0;
+    }
+    .template-form .btn {
+        font-size: 16px;
+        line-height: 24px;
+        &.btn_large {
+            padding: 23px 94px 23px;
+            margin-bottom: 28px;
+        }
+    }
+    .template-form_question_row {
+        font-size: 14px;
+        gap: 8px;
+    }
+    .template-form_question_column {
+        gap: 8px;
+    }
+
 }
 
 
