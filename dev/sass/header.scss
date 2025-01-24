@@ -111,29 +111,28 @@ header {
         }
     }
 }
-.navbar {
-    .navbar-nav {
-        .nav-language {
-            .dropdown-arrow::after {
-                display: none;
-            }
-            .nav-link {
-                padding-right: 30px;
-            }
+.navbar-nav {
+    .nav-language {
+        margin-left: auto;
+        .dropdown-arrow::after {
+            display: none;
         }
+    }
+    .nav-link {
+        padding-right: 30px;
     }
 }
 .navbar {
-    .btn {
+    .btn-registration {
         padding: 9px 16px;
     }
 }
 .login {
-    .btn_secondary {
+    .btn-registration, {
         display: none;
-        position: relative;
     }
-    .btn_profile {
+    .btn.btn_profile {
+        display: block;
         &:before {
             content: "";
             position: absolute;
@@ -148,5 +147,8 @@ header {
             background-color: $accent;
         }
     }
+}
+.btn.btn_profile {
+    display: none;
 }
 

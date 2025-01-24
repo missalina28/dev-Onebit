@@ -63,7 +63,186 @@
     .template-form_question_column {
         gap: 8px;
     }
+    .navbar-brand {
+        margin: 0;
+        img {
+            width: 92px;
+            height: 26px;
+        }
+    } 
+    
+        img {
+        width: 92px;
+        height: 26px;
+    }
+    header {
+        .container {
+            padding: 12px 20px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #242424;
+                top: 69px;
+                left: 0;
+            }
+        }
+        .collapse {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    .navbar-nav-main-navigation {
+        position: relative;
+        left: 0;
+        top: 30px;
+        transform: none;
+    }
+    .navbar .navbar-nav-main-navigation .nav-item a {
+        font-size: 20px;
+    }
+    .navbar .navbar-nav .nav-language a,
+    .navbar .navbar-nav .nav-country a {
+        font-size: 14px;
+    }
+    .navbar-nav .nav-country .dropdown-menu, 
+    .navbar-nav .nav-language .dropdown-menu {
+        position: absolute;
+        border: none;
+        left: -19px;
+    }
+    .navbar-toggler {
+        width: 44px;
+        height: 44px;
+        background-color: #20251B;
+        border-radius: 8px;
+        position: relative;
+        .navbar-toggler-line {
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $accent;
+            left: 50%;
+            top: 15px;
+            transform: translate(-50%, 0);
+            transition: .4s;
+            &:nth-child(2) {
+                top: 21px;
+                
+            }
+            &:nth-child(3) {
+                top: 27px;
+                
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        &[aria-expanded="true"] {
+            .navbar-toggler-line {
+                top: 19px;
+                transform: translate(-50%, 0) rotate(45deg);
+
+                &:nth-child(1) {
+                    top: 19px;
+                    transform: translate(-50%, 0) rotate(-45deg);
+                }
+
+                &:nth-child(3) {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .login {
+        .btn_profile {
+            order: -1;
+            width: 44px;
+            height: 44px;
+            font-size: 16px;
+            color: $accent;
+            background-color: #20251B;
+            border: none;
+        }
+        .btn.btn_profile.not-verified {
+            &::before {
+                width: 8px;
+                height: 8px;
+                right: -2px;
+                top: -2px;
+            }
+        }
+    }
+    .navbar-collapse {
+        background-color: $background;
+        transform: translate(0, -46px);
+        padding-top: 3px;
+        transition: .5s;
+        position: relative;
+    }
+    .nav-language, .navbar-nav-country {
+        position: absolute;
+        top: 8px;
+        right: -14px;
+    }
+    .nav-language {
+        right: 57px;
+    }
+    a {
+        &:hover {
+        text-decoration: none;
+        }
+    }
+    .navbar .navbar-nav-main-navigation {
+        .dropdown-menu {
+            border: none;
+            .dropdown-item {
+                padding: 10px 10px;
+                a .nav-item {
+                    font-size: 14px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .btn-exit,
+    .btn-registration {
+        display: none;
+    }
+    .login {
+        .btn-login {
+            display: none;
+        }
+        .btn-exit,
+        .btn_profile {
+            display: block;
+        }
+        
+    }
+    .btn-row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 128px;
+        width: 100%;
+        padding: 4px;
+        .btn {
+         margin: 4px;
+         font-size: 15px;
+         padding: 19px 0;
+         border-radius: 4px;
+         
+        }
+     }
+
+    
+
 
 }
+
 
 
