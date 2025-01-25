@@ -7,6 +7,9 @@ body {
     font-size: $font-size;
     font-family: $font-primary;
 }
+.container {
+    max-width: 1440px;
+}
 h1,h2,h3,h4,h5,h6 {
     color: $titles;
 }
