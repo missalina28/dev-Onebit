@@ -1,2 +1,39 @@
-
+footer {
+    margin-top: auto;
+    .container {
+        display: flex;
+        gap: 162px;
+    }
+    .column-lg {
+        display: flex;
+        gap: 91px;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+}
+.footer-logo {
+    img {
+        width: 200px;
+        height: 58px;
+    }
+}
+.footer-nav_item {
+    font-size: 20px;
+    color: $titles;
+}
+.footer-nav_title {
+    font-size: 24px;
+    color: $strokes;
+}
+.copyright-nav {
+    display: flex;
+    gap: 40px;
+}
+.copyright-nav_item {
+    color: $strokes;
+    font-size: 16px;
+}
  

@@ -76,6 +76,9 @@
         height: 26px;
     }
     header {
+        &.fixed +.wrapper {
+              padding-top: 66px;
+        }
         .container {
             padding: 12px 20px;
             position: relative;
@@ -188,6 +191,11 @@
         top: 8px;
         right: -14px;
     }
+    .nav-country {
+        .dropdown-arrow::after {
+            top: 14px;
+        }
+    }
     .nav-language {
         right: 57px;
     }
@@ -197,6 +205,10 @@
         }
     }
     .navbar .navbar-nav-main-navigation {
+        .dropdown-arrow::after {
+            top: 20px;
+            right: 58px;
+        }
         .dropdown-menu {
             border: none;
             .dropdown-item {
@@ -238,9 +250,6 @@
          
         }
      }
-
-    
-
 
 }
 
