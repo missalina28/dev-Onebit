@@ -11,4 +11,16 @@
         width: 97px;
         height: 31px;
     }
+    footer {
+        .column-lg {
+            gap: 30px;
+            .footer-nav_title {
+                font-size: 22px;
+            }
+            .footer-nav_item {
+                font-size: 18px;
+            }
+        }
+
+    }
 }
