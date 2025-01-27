@@ -1,0 +1,51 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper home">
+    <section class="banner">
+        <div class="container">
+            <div class="banner-col">
+                <div class="banner-text">
+                    <h1 class="banner-title">обмін криптовалют разом з onebit</h1>
+                    <h6 class="banner-subtitle">Проводячи угоду з onebit, ви отримуєте найвигідніші умови обміну криптовалют</h6>
+                </div>
+                <div class="banner-advantages">
+                    <div class="banner-advantages__item"><i class="icon">
+                            <svg>
+                                <use href="#icon-check">
+                                </use>
+                            </svg>
+                        </i>фіксація курсу після фінального підтвердження blockchain</div>
+                    <div class="banner-advantages__item"><i class="icon">
+                            <svg>
+                                <use href="#icon-check">
+                                </use>
+                            </svg>
+                        </i>цілодобова робота. видача готівки з 9:00 до 19:00</div>
+                    <div class="banner-advantages__item"><i class="icon">
+                            <svg>
+                                <use href="#icon-check">
+                                </use>
+                            </svg>
+                        </i>гарантована безпека всіх операцій</div>
+                    <div class="banner-advantages__item">
+                        <i class="icon">
+                            <svg>
+                                <use href="#icon-check">
+                                </use>
+                            </svg>
+                        </i>мінімальна комісія $15</div>
+                </div>
+                <a href="#" class="banner-link">топ крипто-фіатних пар
+                    <svg>
+                        <use href="#icon-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="banner-col">
+                @@include('templates/form-exchange.html')
+            </div>
+        </div>
+    </section>
+</main>
+@@include('templates/footer.html')
+ 

@@ -1,0 +1,64 @@
+.banner {
+    overflow: hidden;
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        .banner-col {
+            display: flex;
+            flex-direction: column;
+            .banner-text {
+                max-width: 705px;
+                margin-bottom: 72px;
+                .banner-title {
+                    padding-bottom: 22px;
+                    font-weight: 600;
+                }
+                .banner-subtitle {
+                    font-size: 24px;
+                    color: $body-text;
+                }
+            }
+            .banner-advantages {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px 50px;
+                max-width: 790px;
+                width: 100%;
+                margin-bottom: 80px;
+                .banner-advantages__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    max-width: 370px;
+                    .icon:hover {
+                        border: none;
+                    }
+                }
+            }
+            .banner-link {
+                &:hover {
+                    text-decoration: none;
+                }
+                svg {
+                    height: 12px;
+                    width: 13px;
+                    transition: .3s;
+                    margin-left: 8px;
+
+                }
+            }
+            .banner-link:hover svg {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .form-exchange {
+        margin-left: 110px;
+    }
+}
