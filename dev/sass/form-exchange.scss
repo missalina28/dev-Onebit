@@ -1,4 +1,6 @@
 .form-exchange {
+    border: 1px solid $light-black;
+    background-color: $background;
     width: 540px;
     height: 670px;
     border-radius: 20px;
@@ -20,26 +22,11 @@
             border: none;
             padding: 0;
         }
-        select {
-        background-color: $system;
-        border: 1px solid $strokes;
-        border-radius: 8px;
-        padding: 16px 20px;
-        color: $titles;
-        font-size: 18px;
-        font-weight: 600;
-
-        }
-    
-
     }
     .exchange-info {
         margin-bottom: 40px;
         margin-top: 14px;
         list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
         padding: 0;
         &-item {
             width: calc(50% - 24px);
@@ -52,6 +39,17 @@
             color: $accent;
             font-size: 20px;
         }
+        &__row {
+            display: flex;
+            gap: 20px;
+        }
+        &__col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        }
 
     }
     .btn {
@@ -59,4 +57,91 @@
         font-size: 24px;
     }
 
+    .nice-select{
+        border: 1px solid $strokes;
+        background: $system;
+        padding: 16px 20px;
+        height: 56px;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 201px;
+        &:after {
+            border-bottom: 2px solid $body-text;
+            border-right: 2px solid $body-text;
+            height: 10px;
+            width: 10px;
+            right: 20px;
+            top: 50%;
+            margin-top: -7px;
+        }
+    }
+
+    .nice-select {
+        .nice-select-dropdown {
+            background-color: $system;
+            border: 1px solid $strokes;
+            margin-top: 10px;
+        }
+        .nice-select-search-box {
+            padding: 13px 24px;
+    
+        }
+        .nice-select-search {
+            background-color: $system;
+            border: 1px solid $body-text;
+            color: $titles;
+            padding: 10px;
+    
+            &:focus {}
+        }
+        .list {
+            max-height: 320px;
+            margin: 0;
+            @extend .scroll;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .option:hover,
+        .option.focus,
+        .option.selected.focus {
+            background: $body-text;
+            background: $controll-btn-bg;
+        }
+        .option {
+            display: flex;
+            gap: 12px;
+            color: $titles;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 12px 20px;
+            position: relative;
+            align-items: center;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                left: 24px;
+                right: 24px;
+                top: 0;
+                border-bottom: 1px solid $light-black;
+            }
+    
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+.home {
+    .form-exchange {
+        border: none;
+    }
 }

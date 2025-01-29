@@ -7,6 +7,9 @@ body {
     font-size: $font-size;
     font-family: $font-primary;
 }
+header {
+    z-index: 10;
+}
 .container {
     max-width: 1440px;
 }
@@ -163,6 +166,24 @@ h6 {
 input {
     outline: none;
     width: 100%;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+    background-color: $accent;
+    border-radius: 5px;
+}
+
+.scroll-x::-webkit-scrollbar {
+    height: 3px;
+    background-color: #242424;
+    border: 0px solid #242424;
+    border-radius: 5px;
+}
+
+.scroll {
+    scrollbar-color: $accent #242424;
+    padding-right: 8px;
+    overflow: auto;
 }
 
 

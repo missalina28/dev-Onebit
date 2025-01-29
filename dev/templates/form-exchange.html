@@ -2,6 +2,67 @@
     <div class="give">
         <label for="give-currency">віддаю</label>
         <div class="input-row">
+            <input id="give-currency" type="number" value="1000">
+            <select name="choice-give-currency" id="choice-get-currency">
+                <option data-src="./assets/img/icon-bitcoin.svg" value="bitcoin">bitcoin</option>
+                <option data-src="./assets/img/icon-ethereum.svg" value="ethereum">ethereum</option>
+                <option data-src="./assets/img/icon-litecoin.svg" value="litecoin">litecoin</option>
+                <option data-src="./assets/img/icon-ripple.svg" value="ripple">ripple</option>
+                <option data-src="./assets/img/icon-monero.svg" value="monero">monero</option>
+                <option data-src="./assets/img/icon-dogecoin.svg" value="dogecoin">dogecoin</option>
+                <option data-src="./assets/img/icon-dash.svg" value="dash">dash</option>
+                <option data-src="./assets/img/icon-zcash.svg" value="zcash">zcash</option>
+                <option data-src="./assets/img/icon-tether-omni.svg" value="tether omni">tether omni</option>
+                <option data-src="./assets/img/icon-tether-erc20.svg" value="tether erc20">tether erc20</option>
+                <option data-src="./assets/img/icon-tether-trc20.svg" value="tether trc20">tether trc20</option>
+                <option data-src="./assets/img/icon-stellar.svg" value="stellar">stellar</option>
+                <option data-src="./assets/img/icon-tron.svg" value="tron">tron</option>
+                <option data-src="./assets/img/icon-uah.svg" value="UAH">UAH</option>
+                <option data-src="./assets/img/icon-usd.svg" value="USD">USD</option>
+                <option data-src="./assets/img/icon-eur.svg" value="EUR">EUR</option>
+                <option data-src="./assets/img/icon-pln.svg" value="PLN">PLN</option>
+            </select>
+        </div>
+    </div>
+    <div class="get">
+        <label for="get-currency">отримую</label>
+        <div class="input-row">
+            <input id="get-currency" type="number" value="1943000">
+            <select name="choice-get-currency" id="choice-get-currency">
+                <option data-src="./assets/img/icon-bitcoin.svg" value="bitcoin">bitcoin</option>
+                <option data-src="./assets/img/icon-ethereum.svg" value="ethereum">ethereum</option>
+                <option data-src="./assets/img/icon-litecoin.svg" value="litecoin">litecoin</option>
+                <option data-src="./assets/img/icon-ripple.svg" value="ripple">ripple</option>
+                <option data-src="./assets/img/icon-monero.svg" value="monero">monero</option>
+                <option data-src="./assets/img/icon-dogecoin.svg" value="dogecoin">dogecoin</option>
+                <option data-src="./assets/img/icon-dash.svg" value="dash">dash</option>
+                <option data-src="./assets/img/icon-zcash.svg" value="zcash">zcash</option>
+                <option data-src="./assets/img/icon-tether-omni.svg" value="tether omni">tether omni</option>
+                <option data-src="./assets/img/icon-tether-erc20.svg" value="tether erc20">tether erc20</option>
+                <option data-src="./assets/img/icon-tether-trc20.svg" value="tether trc20">tether trc20</option>
+                <option data-src="./assets/img/icon-stellar.svg" value="stellar">stellar</option>
+                <option data-src="./assets/img/icon-tron.svg" value="tron">tron</option>
+                <option data-src="./assets/img/icon-uah.svg" value="UAH">UAH</option>
+                <option data-src="./assets/img/icon-usd.svg" value="USD">USD</option>
+                <option data-src="./assets/img/icon-eur.svg" value="EUR">EUR</option>
+                <option data-src="./assets/img/icon-pln.svg" value="PLN">PLN</option>
+            </select>
+        </div>
+    </div>
+    <ul class="exchange-info">
+        <li class="exchange-info_item exchange-info__row">
+            <div class="exchange-info__title">курс обміну</div>
+            <div class="exchange-info__value">1 USD = 39 UAH</div>
+        </li>
+    </ul>
+    <button class="btn btn_large">відправити заявку</button>
+</form>
+
+
+<!-- <form class="form-exchange">
+    <div class="give">
+        <label for="give-currency">віддаю</label>
+        <div class="input-row">
             <input id="give-currency" type="number" value="1 000">
             <select name="choice-give-currency" id="choice-get-currency">
                 <option data-src="./assets/img/icon-bitcoin.svg" value="bitcoin">bitcoin</option>
@@ -49,11 +110,15 @@
             </select>
         </div>
     </div>
-    <ul class="exchange-info">
+    <ul class="exchange-info exchange-info__col">
         <li class="exchange-info_item">
             <div class="exchange-info__title">курс обміну</div>
             <div class="exchange-info__value">1 USD = 39 UAH</div>
         </li>
+        <li class="exchange-info_item">
+            <div class="exchange-info__title">комісія</div>
+            <div class="exchange-info__value">0,1%</div>
+        </li>
     </ul>
     <button class="btn btn_large">відправити заявку</button>
-</form>
+</form> -->
