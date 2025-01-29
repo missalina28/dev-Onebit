@@ -1,16 +1,23 @@
 .banner {
     overflow: hidden;
+    padding-bottom: 250px + 150px;
+    
+    >.container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     + section {
-        margin-bottom: 250px;
+        margin-top: -150px;
         transition: 1s;
     }
+    
     .container {
         margin-left: auto;
         margin-right: auto;
         padding: 40px 0 0 0;
-        display: flex;
-        justify-content: space-between;
         .banner-col {
+            position: relative;
             display: flex;
             flex-direction: column;
             .banner-text {
@@ -61,5 +68,12 @@
                 transform: rotate(90deg);
             }
         }
+    }
+    .form-light {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
     }
 }

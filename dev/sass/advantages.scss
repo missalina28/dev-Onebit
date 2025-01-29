@@ -1,0 +1,27 @@
+.advantages {
+    .template-title {
+        margin-bottom: 100px;
+       }
+    .advantages-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        .advantages-item {
+            background-color: $system;
+            border-radius: 15px;
+            display: flex;
+        }
+        .advantages-text {
+            margin: 40px;
+            h5 {
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+            h6 {
+                font-weight: 400;
+                color: $body-text;
+            }
+        
+        }
+    }
+}
