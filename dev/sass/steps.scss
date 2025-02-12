@@ -1,0 +1,35 @@
+.step-list {
+    counter-reset: steps;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.step-item {
+    background-color: $accent;
+    border-radius: 15px;
+    max-width: 460px;
+    padding: 50px 50px 42px 50px;
+    &:before {
+        counter-increment: steps;
+        content: "крок " counter(steps);
+        font-size: 24px;
+        color: $active;
+    }
+    .step-number {
+        padding-bottom: 50px;
+    }
+    .step-title {
+        font-size: 36px;
+        color: $system;
+        padding-bottom: 22px;
+        font-weight: 600;
+    }
+    .step-description {
+        color: $active;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+}
+
+
