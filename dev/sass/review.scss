@@ -1,0 +1,105 @@
+.review {
+    .container {
+    max-width: 1920px;
+    background-color: $accent;
+    min-height: 900px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    }
+    .swiper-wrapper {
+        margin-top: 250px;
+        position: relative;
+        margin-bottom: 50px;
+        blockquote {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 950px;
+            height: 404px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            &::before {
+                content: "";
+                background: url(assets/img/blockquote.svg) center/contain no-repeat;
+                width: 136px;
+                height: 112px;
+                position: absolute;
+                z-index: -1;
+                top: -49px;
+                left: -59px;
+            }
+        }
+        .review-text {
+            font-size: 32px;
+            color: $system;
+            margin-bottom: 80px;
+        }
+        .review-info {
+            .review-autor {
+                font-size: 24px;
+                font-weight: 600;
+                color: $system;
+                margin-bottom: 8px;
+            }
+            .review-data {
+                font-size: 20px;
+                color: $active;
+            }
+        }
+    }
+    .review-btn {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        bottom: 61px;
+        right: 378px;
+        padding-left: 100px;
+        height: 75px;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: static;
+            border: 2px solid $active;
+            border-radius: 50px;
+            width: 74px;
+            height: 74px;
+            margin: 0;
+            &::after {
+                content: "";
+                background: url(assets/img/review-arrow.svg) center/contain no-repeat;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 26px;
+                left: 125px;
+            }
+        }
+        .swiper-button-next {
+            &::after {
+                top: 26px;
+                left: 222px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: $titles;
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            margin: 8px;
+            transition: .3s;
+
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $active;
+            width: 160px;
+            border-radius: 55px;
+
+        }
+    }
+}

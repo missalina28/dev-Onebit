@@ -13,24 +13,21 @@ window.addEventListener("scroll", function() {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+    });
+  });
+  
 
-const time=3
-let greeting;
 
-if (time<4) {
-    greeting="Good night!"
-}
-else if (time<12) {
-    greeting="Good morning!"
-}
-else if (time<17) {
-    greeting="Good afternoon!"
-}
-else if (time<22) {
-    greeting="Good evening!"
-}
-else {
-    greeting="Hi!"
-}
-
-console.log(greeting)
