@@ -305,6 +305,85 @@
             }
         }
     }
+    .banner {
+        .container {
+            padding: 20px;
+            flex-direction: column-reverse;
+            .banner-col-advantages {
+                flex-direction: column-reverse;
+            }
+            .banner-col {
+                .banner-text {
+                    margin-bottom: 40px;
+                    .banner-title {
+                        font-size: 32px;
+                        margin: 0;
+                        padding-bottom: 20px;
+                    }
+                    .banner-subtitle {
+                        font-size: 18px;
+                    }
+                }
+                .banner-advantages {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .banner-advantages__item {
+                        font-size: 14px;
+                        .icon {
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+       
+
+    }
+    .form-exchange {
+        width: 320px;
+        padding: 0;
+        height: 320px;
+        margin-bottom: 32px;
+        .input-row {
+            width: 320px;
+            display: flex;
+            padding: 10px 10px 10px 16px;
+            border-radius: 8px;
+            .nice-select {
+                min-width: 161px;
+                font-size: 14px;
+                border-radius: 8px;
+                color: $titles;
+                padding: 24px 12px;
+                height: 48px;
+            }
+            input {
+                font-size: 14px;
+            }
+        
+        }
+        .exchange-info {
+            gap: 12px;
+            .exchange-info__title {
+                font-size: 14px;
+            }
+            .exchange-info__value {
+                font-size: 14px;
+            }
+        }
+        .btn {
+            font-size: 16px;
+        }
+        .btn.btn_large {
+            padding: 22px 0;
+        }
+    }
 
 }
 
