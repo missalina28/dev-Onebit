@@ -1,3 +1,9 @@
+.steps {
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+}
 .step-list {
     counter-reset: steps;
     display: grid;
@@ -9,14 +15,20 @@
     border-radius: 15px;
     max-width: 460px;
     padding: 50px 50px 42px 50px;
+    min-height: 460px;
+    &:hover {
+        background-color: $hover;
+    }
     &:before {
         counter-increment: steps;
         content: "крок " counter(steps);
         font-size: 24px;
         color: $active;
+
     }
     .step-number {
         padding-bottom: 50px;
+        
     }
     .step-title {
         font-size: 36px;

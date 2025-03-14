@@ -1,4 +1,9 @@
 @media screen and (max-width: 1024px) {
+    section {
+        + section {
+            margin-top: 100px;
+        }
+    }
     .column-logo {
         display: none;
     }
@@ -76,6 +81,7 @@
         height: 26px;
     }
     header {
+        background-color: $background;
         &.fixed +.wrapper {
               padding-top: 66px;
         }
@@ -306,6 +312,7 @@
         }
     }
     .banner {
+        padding-bottom: 100px;
         .container {
             padding: 20px;
             flex-direction: column-reverse;
@@ -383,8 +390,202 @@
         .btn.btn_large {
             padding: 22px 0;
         }
+        .form-exchange .nice-select .option {
+            gap: 9px;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 4px 16px;
+        }
+    }
+    .advantages {
+        margin-bottom: 100px;
+        .container {
+            padding: 20px;
+            .template-title {
+                margin-bottom: 60px;
+                h2 {
+                    font-size: 32px;
+                }
+                h3 {
+                    font-size: 18px;               }
+            }
+            .advantages-list {
+                display: flex;
+                flex-direction: column;
+                .advantages-item {
+                    flex-direction: column;
+                    max-width: 320px;
+                    margin: 0 auto;
+                    .advantages-text {
+                        h5 {
+                            font-size: 24px;
+                            margin-bottom: 12px;
+                        }
+                        h6 {
+                            font-size: 16px;
+                        }
+                    }
+                    .advantages-image {
+                        display: flex;
+                        padding: 0 24px 24px 24px;
+                        margin: 0;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
+    .steps {
+        margin-top: 0;
+        .container {
+            padding: 0 20px 0 20px;
+            .template-title {
+                margin-bottom: 60px;
+                h2 {
+                    font-size: 32px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+            }
+            .step-list {
+                display: flex;
+                flex-direction: column;
+                .step-item {
+                    min-height: 292px;
+                    padding: 24px;
+                    &::before {
+                        font-size: 18px;
+                    }
+                }
+                .step-number {
+                    padding-bottom: 40px;
+                }
+                 .step-title {
+                    font-size: 24px;
+                    padding-bottom: 12px;
+                }
+                .step-description {
+                    font-size: 18px;
+                }
+
+
+
+            }
+        }
+    }
+    .cities {
+        .container {
+            padding: 0 20px 0 20px;
+        }
+        .template-title {
+            margin-bottom: 60px;
+            h2 {
+                text-align: start;
+                font-size: 32px;
+            }
+            .cities-link {
+                display: none;
+            }
+        }
+        .city-list {
+            .city-item {
+                padding: 32px 0 32px 24px;
+                font-size: 20px;
+            }
+        }
+    }
+    .questions {
+        margin-bottom: 100px;
+        .container {
+            padding: 0 20px 0 20px;
+
+            .template-title {
+                margin-bottom: 60px;
+                h2 {
+                    font-size: 31px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+        .accordion {
+            .accordion-header {
+                .accordion-button {
+                    padding: 25px 0 25px 0;
+                    font-size: 20px;
+                    &::after {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    .review {
+        min-height: auto;
+        padding: 0;
+        .container  {
+            padding: 0;
+            .review-text {
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+            .review-info {
+                .review-autor {
+                    font-size: 14px;
+                }
+                .review-data {
+                    font-size: 12px;
+                }
+            }
+            .swiper-wrapper {
+                blockquote {
+                    &::before {
+                        width: 84px;
+                        height: 70px;
+                        top: -14px;
+                        left: -11px;
+                    }
+                }
+                .swiper-slide {
+                    padding: 60px 20px;
+                }
+            }
+            .review-btn {
+                height: 44px;
+                padding-left: 30px;
+                padding-right: 44px;
+                .swiper-button-prev,
+                .swiper-button-next {
+                    
+                    width: 44px;
+                    height: 44px;
+                }
+                .swiper-button-prev::after {
+                    
+                    width: 20px;
+                    height: 14px;
+                    top: 16px;
+                    left: 43px;
+                }
+                .swiper-button-next::after {
+                    
+                    width: 20px;
+                    height: 14px;
+                    top: 16px;
+                    left: 107px;
+                }
+            }
+        }
+    }
+   
 }
 
 
